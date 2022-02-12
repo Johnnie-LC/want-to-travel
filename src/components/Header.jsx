@@ -17,7 +17,7 @@ const Header = () => {
           {
             aerolineas.map(aerolinea =>
               <li key={aerolinea.id}>
-                <NavLink exact to={`/${aerolinea.name}`}
+                <NavLink exact to={`/want-to-travel/${aerolinea.name}`}
                   activeClassName='active'>
                   {aerolinea.name}
                 </NavLink>

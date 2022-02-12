@@ -17,14 +17,14 @@ export const AppRouter = () => {
     <Router>
       <Header />
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/want-to-travel/'>
           <Saludo aeriolinea=''/>
         </Route>
-        <Route exact path='/vivair'
+        <Route exact path='/want-to-travel/vivair'
           component={ () => <Aerolinea aerolinea='vivair'/>}/>
-        <Route exact path='/avianca'
+        <Route exact path='/want-to-travel/avianca'
           component={ () => <Aerolinea aerolinea='avianca' />} />
-        <Route exact path='/latam'
+        <Route exact path='/want-to-travel/latam'
           component={ () => <Aerolinea aerolinea='latam' />} />
       </Switch>
     </Router>
