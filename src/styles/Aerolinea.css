@@ -1,0 +1,113 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: azure;
+  max-width: 700px;
+}
+p {
+  font-weight:500;
+  font-size:x-large;
+  margin: 20px;
+  text-align: center;
+  color: rgb(71, 119, 121);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  min-width: 400px;
+  background-color: cadetblue;
+  color: aliceblue;
+}
+
+form h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.sendSubmit{
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+  margin: 10px auto;
+  font-size: medium;
+  color: rgb(98, 114, 104);
+  background-color: azure;
+  border: 1px solid azure;
+  transition: all ease-in-out 250ms;
+}
+
+.sendSubmit:hover{
+  cursor: pointer;
+  background-color: cadetblue;
+  border: 1px solid azure;
+  color: azure;
+}
+
+.sendSubmit:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+
+.formsection {
+  display: flex;
+  flex-direction: column; 
+  gap:10px;
+  margin-bottom: 10px;
+}
+.formsection input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(222, 240, 229);
+  /* outline-color: rgba(0, 0, 0, .2); */
+  outline-style: none;
+  font-size: medium;
+  color: rgb(98, 114, 104);
+}
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  margin: 10px auto;
+  width: 90%; /* Specific width is required for Firefox. */
+  height: 10px;
+  padding: 0;
+  background-color: rgb(222, 240, 229);
+  
+}
+input[type=range]::-webkit-slider-thumb {
+  /* -webkit-appearance: none; */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:rgb(110, 183, 185);
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb:active{
+  background-color:hsl(182, 60%, 58%);
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color:rgb(110, 183, 185);
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(74, 123, 124);
+  border-radius: 50%;
+}
+
+@media (max-width: 460px) {
+  form{
+    min-width: 320px;
+    margin: 0;
+  }
+  .sendSubmit{
+    width: 100%;
+  }
+}
